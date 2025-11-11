@@ -98,13 +98,12 @@ nav a:hover, nav a.active {color: #ff6b00;}
 footer {text-align: center; background: #ff6a00d0; color: #fff; padding: 20px;}
 
 /* RESPONSIVE */
-@media (max-width:900px){
-  .hero-grid{grid-template-columns:1fr; gap:14px}
-  .section-grid{grid-template-columns:1fr; gap:12px}
-  .contact-grid{grid-template-columns:1fr; gap:12px}
-  .nav-toggle{display:inline-flex}
-  .nav{position:fixed; right:12px; top:58px; background:rgba(3,7,18,0.9); padding:8px; border-radius:10px; flex-direction:column; gap:6px; display:none}
-  .nav.open{display:flex}
+@media (max-width: 768px) {
+  header {padding: 15px 30px;}
+  nav ul {display: none;}
+  .menu {display: block;}
+  .section {flex-direction: column; padding: 100px 30px 40px;}
+  .info-grid, .exp-grid, .proj-grid, .edu-grid, .cert-grid {flex-direction: column;}
 }
 
 
@@ -176,3 +175,17 @@ footer {text-align: center; background: #ff6a00d0; color: #fff; padding: 20px;}
   margin: 4px 0;
 
 }
+
+@media (max-width: 768px) {
+  #home {
+    min-height: 70vh;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .home-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
